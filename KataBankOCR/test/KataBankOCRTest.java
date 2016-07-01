@@ -211,7 +211,7 @@ public class KataBankOCRTest {
                       "|_||_||_||_||_||_||_||_||_|\n" +
                       "                           ";
         
-        assertEquals("888888888 AMB", ocr.resolveAccountNumber(nmbr));
+        assertEquals("888888888 AMB ['888886888', '888888880', '888888988']", ocr.resolveAccountNumber(nmbr));
     }
     
     @Test
@@ -241,7 +241,7 @@ public class KataBankOCRTest {
                       " _| _| _| _| _| _| _| _| _|\n" +
                       "                           ";
         
-        assertEquals("999999999 AMB", ocr.resolveAccountNumber(nmbr));
+        assertEquals("999999999 AMB ['899999999', '993999999', '999959999']", ocr.resolveAccountNumber(nmbr));
     }
 
 }
