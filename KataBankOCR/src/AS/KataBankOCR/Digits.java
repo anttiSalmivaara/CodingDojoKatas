@@ -1,12 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package AS.KataBankOCR;
 
 /**
- *
- * @author antti
+ * Helper class for storing the "digit"-representation constants.
+ * Contains a method for matching the OCR-read representations to constants.
+ * 
+ * @author Antti
  */
 public final class Digits {
     
